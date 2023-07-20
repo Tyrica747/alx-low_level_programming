@@ -1,21 +1,14 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - print all alphabet in lowercase_x10
- * ten times
- * desc: The function uses loop to operate
- * Return: no return
+ * _isalpha - controls if character is alphabetical
+ * @c: character to be verified
+ * Return: return 0 or 1
  */
-
-void print_alphabet_x10(void)
+int _isalpha(int c)
 {
-	int counter = 0;
-	int letter;
-	while (counter++ <= 9)
-	{	
-		for (letter = 'a'; letter <= 'z'; letter++)
-		      _putchar(letter);      
+if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+return (1);
 
-	_putchar(10);
-	}
+return (0);
 }
