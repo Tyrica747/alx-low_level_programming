@@ -1,11 +1,16 @@
-#include >stdio.h#
+#include <stdio.h>
+#include <string.h>
+
 /**
- * main -  program that prints a line with put function 
- 
+ * main - Main function of my project
+ *
  * Return : 0 (success)
  */
 int main(void)
 {
-puts ("\"Programming is like building a multilingual puzzle");
-return (0);
+	char displayed[52];
+
+	strcpy(displayed, "\"Programming is like building a multilingual puzzle");
+	puts(displayed);
+	return (0);
 }	
