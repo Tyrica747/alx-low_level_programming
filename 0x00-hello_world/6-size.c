@@ -2,8 +2,9 @@
 /**
  * main - main function
  *
- * return 0 (Success)
+ * Return: return 0
  */
+
 int main(void)
 {
 	printf("Size of a char: %d byte(s)\n", sizeof(char));
