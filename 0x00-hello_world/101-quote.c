@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- * main - main function in the task
+ * main -Entry point
  *
  *
  * Return: return 1
