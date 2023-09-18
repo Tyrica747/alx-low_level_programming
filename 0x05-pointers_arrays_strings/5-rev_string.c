@@ -12,7 +12,7 @@ while (length > i)
 {
 for (s + length = s + i;
 i++;
-length--;
+length-- ;
 }
 }
 
