@@ -7,24 +7,22 @@
 
 char *rot13(char *str)
 {
-	int index1, index2;
+char s[] = "ROT13 (\"rotate by 13 places\", sometimes hyphenated ROT-13) is a simple letter substitution cipher.\n";
+char *p;
 
-	char alphabet[52] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
-		'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
-		't', 'u', 'v', 'w', 'y', 'z'};
-	char rot13key[52] = {'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
-		'I', 'J', 'K', 'L', 'M', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g',
-		'h', 'i', 'j', 'k', 'l', 'm'};
-	while (str[++index1])
-	{
-		for (index2 = 0; index2 < 52; index2++)
-		{
-			if (str[index] == alphabet[index2])
-			{
-				str[index1] = rot13key[index2];
-				break;
-			}
-		}
-	}
-	return (str);
-}				
+p = rot13(s);
+printf("%s", p);
+printf("---------------------------------------\n");
+printf("%s, s);
+printf("--------------------------------------\n");
+p = rot13(s);
+printf("%s", p);
+printf("-------------------------------------\n");
+printf("%s", s);
+printf("-------------------------------------\n");
+p = rot13(s);
+printf("%s", p);
+printf("-------------------------------------\n");
+printf("%s", s);
+return (0):
+}
