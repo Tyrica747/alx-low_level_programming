@@ -4,21 +4,6 @@
 #include "lists.h"
 
 /**
- * struct listint_s - singly linked list
- * @n: integer
- * @next: points to the next node
- *
- * Description: singly linked list node structure
- * 
- */
-typedef struct listint_s
-{
-    int n;
-    struct listint_s *next;
-} listint_t;
-
-
-/**
  * main - check the code
  *
  * Return: Always 0.
@@ -26,7 +11,7 @@ typedef struct listint_s
 int main(void)
 {
     listint_t *head;
-    int n;
+    listint_t *node;
 
     head = NULL;
     add_nodeint_end(&head, 0);
@@ -38,13 +23,9 @@ int main(void)
     add_nodeint_end(&head, 402);
     add_nodeint_end(&head, 1024);
     print_listint(head);
-    n = pop_listint(&head);
-    printf("- %d\n", n);
-    print_listint(head);
-    n = pop_listint(&head);
-    printf("- %d\n", n);
+    node = get_nodeint_at_index(head, 5);
+    printf("%d\n", node->n);
     print_listint(head);
     free_listint2(&head);
-    printf("%p\n", (void *)head);
     return (0);
 }
